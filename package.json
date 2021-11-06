@@ -5,7 +5,9 @@
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
     "preview": "svelte-kit preview",
-    "lint": "eslint --ignore-path .gitignore ."
+    "lint": "eslint --ignore-path .gitignore .",
+    "package": "npx svelte-kit package && cd package && npx npe name @mevo-ui/svelte",
+    "publish": "npm publish --access public"
   },
   "devDependencies": {
     "@sveltejs/kit": "next",
